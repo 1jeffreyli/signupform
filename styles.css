@@ -57,13 +57,11 @@ i {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(20vh, auto);
-    /* max-width: 960px; */
+    grid-auto-rows: minmax(2.5vh, auto);
     margin: 0 auto;
     grid-template-areas:
     "background-image background-image header-text header-text"
     "background-image background-image header-text header-text"
-    "background-image background-image signup-box signup-box"
     "background-image background-image signup-box signup-box"
     "background-image background-image signup-box signup-box"
 }
@@ -115,7 +113,7 @@ a:link {
     grid-area: header-text;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     background-color: whitesmoke;
     font-size: 24px;
@@ -127,81 +125,72 @@ a:link {
     line-height: 2rem;
 }
 
-.signup-box {
-    grid-area: signup-box;
-}
-
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+form h1 {
+    font-size: 24px;
+}
+
+.form-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    /* width: 100%; */
-    grid-gap: 10px;
-    margin-left: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
-    "legend legend"
-    "first-name last-name"
-    "email phone"
-    "password password-confirm"
-    "button-box button-box";
+    "name"
+    "contact-info"
+    "passwords";
 }
 
-.legend {
-    grid-area: legend;
+.name, .contact-information, .passwords {
+    grid-area: name;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-.first-name {
-    grid-area: first-name;
+.contact-information {
+    grid-area: contact-info;
 }
 
-.last-name {
-    grid-area: last-name;
+.passwords {
+    grid-area: passwords;
 }
 
-.email {
-    grid-area: email;
-}
-
-.phone {
-    grid-area: phone;
-}
-
-.password {
-    grid-area: password;
-}
-
-.password-confirm {
-    grid-area: password-confirm;
-}
-
-.password-section {
-    box-shadow: 5px 5px 15px -6px #000000;
-}
-
-.button-box {
-    grid-area: button-box;
+.submit {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 40px;
-    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: space-between;
+    padding: 50px;
 }
 
-
-.button-box a:visited {
-    color: teal;
-}
-
-.button-box a:hover {
-    color: lightblue;
-}
-
-.button-box button {
+.submit button{
+    background-color: darkolivegreen;
     padding: .5rem 3rem;
-    background-color: teal;
     color: white;
     border-radius: 5px;
+    border-style: none;
+    font-weight: bold;
+}
+
+.submit p {
+    /* padding: 2rem; */
+}
+
+.submit a:visited {
+    color: darkolivegreen;
+}
+
+.submit a:hover {
+    color: lightblue;
 }
