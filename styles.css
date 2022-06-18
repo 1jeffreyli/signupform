@@ -115,7 +115,7 @@ a:link {
     grid-area: header-text;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: whitesmoke;
     font-size: 24px;
@@ -134,5 +134,26 @@ a:link {
 
 .button-box {
     grid-area: button-box;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 40px;
+}
 
+
+.button-box a:visited {
+    color: teal;
+}
+
+.button-box a:hover {
+    color: lightblue;
+}
+
+.button-box button {
+    padding: .5rem 3rem;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
 }
