@@ -54,20 +54,57 @@ i {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    max-width: 960px;
+    grid-auto-rows: minmax(20vh, auto);
+    /* max-width: 960px; */
     margin: 0 auto;
     grid-template-areas:
-    "background-image background-image header-text"
-    "background-image background-image header-text"
-    "background-image background-image signup-box"
-    "background-image background-image signup-box"
-    "background-image background-image button-box"
+    "background-image background-image header-text header-text"
+    "background-image background-image header-text header-text"
+    "background-image background-image signup-box signup-box"
+    "background-image background-image signup-box signup-box"
+    "background-image background-image button-box button-box"
 }
 
 .background-image {
     grid-area: background-image;
+    background-image: url(images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: 100%;
+}
 
+.logo {
+    background-color: rgb(0, 0, 0, 50%);
+    font-size: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.logo p {
+    padding: 20px;
+}
+
+.image-credit {
+    margin-bottom: 25px;
+}
+
+a:link {
+    color: white;
+}
+
+.image-credit a:visited {
+    color: white;
+}
+
+.image-credit a:hover {
+    color: lightblue;
 }
 
 .header-text {
