@@ -57,9 +57,10 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(50%, auto);
+    /* grid-auto-rows: minmax(50%, auto); */
     grid-template-areas: 
     "background-image header-text"
+    "background-image signup-form"
     "background-image signup-form"
     "background-image signup-form";
 }
@@ -119,7 +120,7 @@ body {
 .header-text {
     grid-area: header-text;
     background-color: whitesmoke;
-    height: 50vh;
+    height: 25vh;
     width: auto;
     /* margin: 0 auto; */
 
@@ -137,11 +138,12 @@ body {
 
 .header-text p {
     padding: .5rem 3rem;
+    line-height: 1.5rem;
 }
 
 .signup-form {
     grid-area: signup-form;
     background-color: green;
-    height: 50vh;
+    height: 75vh;
     width: auto;
 }
