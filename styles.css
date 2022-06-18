@@ -105,15 +105,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.logo > p > a:link {
+a:link {
     color: white;
 }
 
-.logo > p > a:visited {
+a:visited {
     color: blue;
 }
 
-.logo > p > a:hover {
+a:hover {
     color: turquoise;
 }
 
@@ -143,7 +143,7 @@ body {
 
 .signup-form {
     grid-area: signup-form;
-    background-color: green;
+    background-color: white;
     height: 75vh;
     width: auto;
 }
