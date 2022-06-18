@@ -109,7 +109,18 @@ a:link {
 
 .header-text {
     grid-area: header-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: lightcyan;
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.header-text p {
+    padding: 40px;
+    line-height: 2rem;
 }
 
 .signup-box {
