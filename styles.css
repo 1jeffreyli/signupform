@@ -156,7 +156,7 @@ button, input {
 
 fieldset {
     padding: 10px 30px 0;
-    width: 400px;
+    width: 100%;
 }
 
 fieldset > div {
@@ -224,4 +224,9 @@ input {
 
 input:invalid {
     border: 2px solid red;
+}
+
+fieldset > div:nth-child(-n+7) {
+    display: inline-block;
+    margin-left: 100px;
 }
