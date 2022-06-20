@@ -48,12 +48,14 @@ table {
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     width: auto;
     margin: 0 auto;
 }
 
 .wrapper {
+    height: 100%;
+    width: auto;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -165,12 +167,24 @@ fieldset {
 }
 
 .labels-inputs {
-    width: 400px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-.labels-inputs div {
+.labels-inputs > div {
+    /* display: block; */
+    width: 150px;
+    padding: .5rem 2rem;
+}
+
+.labels-inputs > div > label, input {
     display: block;
-    width: 100px;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
 }
 
 .button-box {
