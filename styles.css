@@ -209,10 +209,12 @@ fieldset {
 
 .labels-inputs input:invalid {
     border: 1px solid red;
+    box-shadow: 4px 4px 2px -1px gray;
 }
 
 .labels-inputs input:valid {
     border: 1px solid green;
+    box-shadow: 4px 4px 2px -1px gray;
 }
 
 .labels-inputs input:invalid + span::after {
