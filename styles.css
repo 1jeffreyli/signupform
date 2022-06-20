@@ -220,6 +220,11 @@ fieldset {
     margin-top: 5px;
 }
 
+.labels-inputs input:focus {
+    border: 1px solid blue;
+    box-shadow: 4px 4px 2px -1px gray;
+}
+
 .button-box {
     padding: 2rem 2rem;
     margin-top: 15px;
