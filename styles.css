@@ -178,7 +178,6 @@ fieldset {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-top: 20px;
     margin-bottom: 60px;
     font-weight: lighter;
 }
@@ -210,6 +209,10 @@ fieldset {
 
 .labels-inputs input:invalid {
     border: 1px solid red;
+}
+
+.labels-inputs input:valid {
+    border: 1px solid green;
 }
 
 .labels-inputs input:invalid + span::after {
