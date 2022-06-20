@@ -145,7 +145,7 @@ a:hover {
 }
 
 .header-text p {
-    padding: .5rem 3rem;
+    padding: .5rem 2rem;
     line-height: 1.5rem;
 }
 
@@ -164,6 +164,7 @@ form {
 fieldset {
     background-color: white;
     width: 100%;
+    box-shadow: 0 3px 2px -2px gray;
 }
 
 .form-header {
@@ -177,12 +178,16 @@ fieldset {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
 }
 
 .labels-inputs > div {
     /* display: block; */
     width: 150px;
     padding: .5rem 2rem;
+    margin-top: 20px;
 }
 
 .labels-inputs > div > label, input {
@@ -192,9 +197,32 @@ fieldset {
     font-size: 12px;
 }
 
+.labels-inputs input {
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    margin-top: 5px;
+}
+
+.labels-inputs input {
+    height: 25px;
+    font-size: 16px;
+}
+
+.labels-inputs input:invalid {
+    border: 1px solid red;
+}
+
+.labels-inputs input:invalid + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "* Passwords do not match";
+    color: red;
+    margin-top: 5px;
+}
+
 .button-box {
     padding: 2rem 2rem;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 button {
