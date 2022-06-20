@@ -173,20 +173,20 @@ fieldset {
 }
 
 .labels-inputs {
-    width: 500px;
+    width: 650px;
     height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     font-weight: lighter;
 }
 
 .labels-inputs > div {
     /* display: block; */
-    width: 150px;
-    padding: .5rem 2rem;
+    width: 225px;
+    padding: .5rem 4rem .5rem 2rem;
     margin-top: 20px;
 }
 
