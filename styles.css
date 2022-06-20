@@ -50,6 +50,7 @@ table {
 /* end of CSS reset */
 :root {
     --background-theme: whitesmoke;
+    --box-theme: 5px 5px 10px -5px grey;
 }
 
 
@@ -164,7 +165,7 @@ form {
 fieldset {
     background-color: white;
     width: 100%;
-    box-shadow: 0 3px 2px -2px gray;
+    box-shadow: var(--box-theme);
 }
 
 .form-header {
@@ -209,12 +210,12 @@ fieldset {
 
 .labels-inputs input:invalid {
     border: 1px solid red;
-    box-shadow: 4px 4px 2px -1px gray;
+    box-shadow: var(--box-theme);
 }
 
 .labels-inputs input:valid {
     border: 1px solid green;
-    box-shadow: 4px 4px 2px -1px gray;
+    box-shadow: var(--box-theme);
 }
 
 .labels-inputs input:invalid + span::after {
@@ -227,7 +228,7 @@ fieldset {
 
 .labels-inputs input:focus {
     border: 1px solid blue;
-    box-shadow: 4px 4px 2px -1px gray;
+    box-shadow: var(--box-theme);
 }
 
 .button-box {
@@ -241,6 +242,8 @@ button {
     border-radius: 3px;
     padding: .5rem 2rem;
     margin-bottom: 25px;
+    border: 1px solid black;
+    box-shadow: var(--box-theme);
 }
 
 .button-box > p > a:link {
