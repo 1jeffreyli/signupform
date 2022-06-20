@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* end of CSS reset */
+:root {
+    --background-theme: whitesmoke;
+}
+
+
 body {
     height: 100vh;
     width: auto;
@@ -65,7 +71,7 @@ body {
     "background-image signup-form"
     "background-image signup-form"
     "background-image signup-form";
-    background-color: whitesmoke;
+    background-color: var(--background-theme);
 }
 
 .background-image {
@@ -100,7 +106,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0;
     margin-top: 6rem;
 }
 
@@ -122,7 +128,6 @@ a:hover {
 
 .header-text {
     grid-area: header-text;
-    background-color: whitesmoke;
     height: 25vh;
     width: auto;
     /* margin: 0 auto; */
@@ -193,8 +198,21 @@ fieldset {
 }
 
 button {
-    background-color: turquoise;
+    background-color: forestgreen;
+    color: white;
     border-radius: 3px;
     padding: .5rem 2rem;
     margin-bottom: 25px;
+}
+
+.button-box > p > a:link {
+    color: forestgreen;
+}
+
+.button-box > p > a:hover {
+    color: red;
+}
+
+.button-box > p > a:visited {
+    color: blue;
 }
