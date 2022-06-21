@@ -29,28 +29,28 @@
                         <div class="labels-inputs">
                             <div>
                                 <label for="fname">FIRST NAME</label>
-                                <input type="text" name="fname" id="fname" placeholder="John" minlength="1" pattern="[a-zA-z]">
+                                <input type="text" name="fname" id="fname" placeholder="John" minlength="1" pattern="[a-zA-z]{1,}" autocomplete="on">
                             </div>
                             <div>
                                 <label for="lname">LAST NAME</label>
-                                <input type="text" name="lname" id="lname" placeholder="Doe" minlength="1" pattern="[a-zA-Z]">
+                                <input type="text" name="lname" id="lname" placeholder="Doe" minlength="1" pattern="[a-zA-Z]{1,}" autocomplete="on">
                             </div>
                             <div>
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" autocomplete="on">
                             </div>
                             <div>
                                 <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxx" pattern="\d{10}|\d{3}+[\\s\-\.]+\d{3}+[\s\-\.]+\d{4}" minlength="10" autocomplete="off">
+                                <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxx" pattern="\d{10}|\d{3}+[\\s\-\.]+\d{3}+[\s\-\.]+\d{4}" minlength="10" autocomplete="on">
                             </div>
                             <div>
                                 <label for="pw">PASSWORD</label>
-                                <input type="password" name="pw" id="pw" required>
+                                <input type="password" name="pw" id="pw" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" required>
                                 <span></span>
                             </div>
                             <div>
                                 <label for="password-confirm">CONFIRM PASSWORD</label>
-                                <input type="password" name="password-confirm" id="password-confirm" required>
+                                <input type="password" name="password-confirm" id="password-confirm" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" required>
                                 <span></span>
                             </div>
                         </div>
