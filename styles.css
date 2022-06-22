@@ -213,10 +213,10 @@ fieldset {
     box-shadow: var(--box-theme);
 }
 
-.labels-inputs input:valid {
+/* .labels-inputs input:valid {
     border: 1px solid green;
     box-shadow: var(--box-theme);
-}
+} */
 
 .labels-inputs input:invalid + span::after {
     font-size: 0.7rem;
