@@ -201,9 +201,6 @@ fieldset {
     border-radius: 3px;
     border: 1px solid lightgray;
     margin-top: 5px;
-}
-
-.labels-inputs input {
     height: 25px;
     font-size: 16px;
 }
@@ -229,6 +226,10 @@ fieldset {
 .labels-inputs input:focus {
     border: 1px solid blue;
     box-shadow: var(--box-theme);
+}
+
+.labels-inputs > div > label {
+    font-size: 18px;
 }
 
 .button-box {
