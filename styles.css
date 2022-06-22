@@ -218,7 +218,7 @@ fieldset {
     box-shadow: var(--box-theme);
 } */
 
-.labels-inputs input:invalid + span::after {
+.error:invalid + span::after {
     font-size: 0.7rem;
     position: absolute;
     content: "* Passwords do not match";
